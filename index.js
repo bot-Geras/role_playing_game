@@ -2,9 +2,9 @@ import characterData from "./data/data.js";
 import Character from "./character.js";
 
 function render() {
-  document.getElementById(wizard.elementId).innerHTML =
+  document.getElementById("hero").innerHTML =
     wizard.getCharacterHtml();
-  document.getElementById(orc.elementId).innerHTML = orc.getCharacterHtml();
+  document.getElementById("monster").innerHTML = orc.getCharacterHtml();
 }
 
 const wizard = new Character(characterData.hero);
